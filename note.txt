@@ -1,0 +1,28 @@
+php
+Hypertext - refer to HTML
+Preprocessor - process the codes on web server before
+
+if u create php -> desktop
+Terminal - php -S loclhost:8000 file-name
+
+Diff https vs https
+http - sends - plain text
+https - encode - send - hex values (more secure)
+
+HTTP request methods
+most used - get | post
+
+output methods
+echo - string (Only Accept)
+print - string (Only Accept)
+print_r() - array / object 
+var_dump() - array / object
+
+string concast - .
+
+!= equal to <> (return true if $x is not equal to $y)
+
+operators
+
+?: - ternary 
+?? - null coalescing
