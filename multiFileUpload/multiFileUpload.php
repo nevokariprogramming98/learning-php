@@ -17,7 +17,19 @@
         echo "<pre>";
         $userPhotos = $_FILES["userPhotos"];
 
-        print_r($userPhotos);
+        // print_r($userPhotos);
+
+        foreach ($userPhotos["name"] as $key => $value) {
+            # code...
+            $photoName = uniqid(). $value;
+            $photoTempName = $userPhotos["tmp_name"][$key];
+
+            $targetFileLocation = "./images/" . $photoName;
+
+            move_uploaded_file($photoTempName, $targetFileLocation);
+
+
+        }
 
         }
     ?>

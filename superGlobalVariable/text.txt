@@ -1,0 +1,6 @@
+https://www.youtube.com/tutorial/what-is-a-domain
+
+https - protocol
+www - sub domain
+youtube.com - domain name
+totorial/what-is-a-domain - path/
