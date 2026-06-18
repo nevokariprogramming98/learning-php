@@ -6,4 +6,5 @@ Server ပေါ်က PHP ကတော့ အောက်က ကျန်နေ
 =================
 
 ဘာတွေ ရှောင်ရမလဲ (What to skip/avoid)
-→ header() မရေးခင် ဘာ HTML element, space, သို့မဟုတ် echo မှ မရေးရပါဘူး။ ရေးမိရင် PHP က "Headers already sent by..." ဆိုတဲ့ နာမည်ကြီး Error ကို ပြပါလိမ့်မယ်။
+→ header() မရေးခင် ဘာ HTML element, space, သို့မဟုတ် echo မှ မရေးရပါဘူး။ 
+ရေးမိရင် PHP က "Headers already sent by..." ဆိုတဲ့ နာမည်ကြီး Error ကို ပြပါလိမ့်မယ်။

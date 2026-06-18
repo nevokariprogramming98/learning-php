@@ -1,9 +1,11 @@
 <?php
 
-$userPassword = "admin";
-$hashPassword = password_hash($userPassword, PASSWORD_BCRYPT);
+$db_password = "admin123";
+$hashPassword = password_hash($db_password, PASSWORD_BCRYPT);
 
-if(password_verify($userPassword, $hashPassword)){
+$login_attempt = "wrongpass";
+
+if(password_verify($db_password, $hashPassword)){
     echo "Login Successful";
 }else{
     echo "Login Failed";

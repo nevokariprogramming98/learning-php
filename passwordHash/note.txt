@@ -1,0 +1,15 @@
+password_hash($userPassword, PASSWORD_BCRYPT): 
+ဒါက User အသစ် Register လုပ်တဲ့အခါ Password ကို ဖတ်လို့မရတဲ့ စာသားရှည်ကြီး (Hash) ဖြစ်အောင် ပြောင်းပေးတာ။  
+
+password_verify($userPassword, $hashPassword): 
+ဒါက User Login ဝင်တဲ့အခါ သူရိုက်ထည့်လိုက်တဲ့ Password အစိမ်းနဲ့ Database ထဲက သိမ်းထားတဲ့ Hash နဲ့ ကိုက်/မကိုက် စစ်ပေးတာ။ ကိုက်ညီရင် လုံခြုံစွာ ဝင်ခွင့်ပေးဖို့ true ပြန်ပေးတယ်၊ မကိုက်ရင် false ပြန်ပေးတယ်။
+
+==============
+
+ဘာတွေ ရှောင်ရမလဲ (What to skip/avoid)
+
+md5() ဒါမှမဟုတ် sha1() တွေကို သုံးပြီး Password ကို Hash လုံးဝ (လုံးဝ) မလုပ်ပါနဲ့။ 
+အဲ့ဒါတွေက အလွန် Outdated ဖြစ်နေပြီ၊ Hacker တွေက စက္ကန့်ပိုင်းအတွင်း ပြန်ဖြည်နိုင်တယ်။
+
+ကိုယ်ပိုင် Encryption/Hashing algorithm တွေ လျှောက်မထွင်ပါနဲ့။ 
+PHP က အသင့်ပေးထားတဲ့ BCRYPT က အခုချိန်ထိ စိတ်အချရဆုံး စံနှုန်းတစ်ခုပဲ။
