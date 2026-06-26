@@ -1,0 +1,20 @@
+JSON (JavaScript Object Notation) ပဲ။
+
+json_encode($array): 
+PHP Array/Object ကို JSON String ပြောင်းတာ။ 
+(Backend ကနေ Frontend ကို Data ပို့ဖို့)
+
+json_decode($json_string, true): 
+JSON String ကို PHP Array/Object အဖြစ် ပြန်ပြောင်းတာ။ 
+(Frontend ကနေ ပို့လိုက်တဲ့ Data ကို Backend က ပြန်ဖတ်ဖို့)
+
+$json_decode_data = json_decode($json_encode_data); လို့ ရေးရင် PHP က Object (stdClass) အနေနဲ့ return ပြန်ပေးတယ်။ 
+Array အနေနဲ့ ပြန်လိုချင်ရင် ဒုတိယ parameter မှာ true ထည့်ပေးရတယ်။ 
+json_decode($json, true); ဆိုရင် တွက်ရချက်ရ ပိုလွယ်တဲ့ Associative Array ရမယ်။
+
+Real job မှာ မင်းက Laravel (Backend) နဲ့ Vue.js (Frontend) ကို တွဲရေးရမယ်။ 
+ပြဿနာက PHP Array တွေကို Vue.js က နားမလည်ဘူး။ 
+အဲဒီတော့ Backend နဲ့ Frontend ကြားမှာ Data တွေ အပြန်အလှန် ပို့ဖို့ Common Language (ကြားခံဘာသာစကား) တစ်ခုလိုတယ်။ 
+အဲဒါက JSON (JavaScript Object Notation) ပဲ။
+Data တွေကို API ကနေတစ်ဆင့် ပို့မယ်ဆိုရင် JSON format နဲ့ပဲ ပို့ရ၊ ယူရတယ်။ 
+ဒီ concept မသိရင် Full-Stack API တစ်ခုလုံး ရေးလို့မရဘူး။
